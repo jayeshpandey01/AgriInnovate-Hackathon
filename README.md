@@ -67,11 +67,4 @@ Our solution leverages data analytics and IoT technology to create smarter farmi
 - **Real-Time Market Data:** Farmers can better align their production with demand, reducing waste and increasing profits.
 - **Early Detection:** Early detection of pests and diseases allows for timely intervention.
 
-## Installation
 
-To get started with the project, clone the repository and install the necessary dependencies.
-
-```bash
-git clone https://github.com/yourusername/smart-farming.git
-cd smart-farming
-npm install
