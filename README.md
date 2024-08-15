@@ -1,4 +1,6 @@
 # AgriInnovate-Hackathon
+`Youtube Video:` https://youtu.be/iU5psFjIQG0 <br>
+`Website:` https://agridev.netlify.app/ <br>
 `DataSet:` https://aps.dac.gov.in/APY/Public_Report1.aspx <br>
 `Get-Data from satellite:` https://github.com/satellite-image-deep-learning/techniques <br>
 `Sugarcane Disease Detection using Deep Learning:` https://github.com/JansherMughal/Sugarcane-Disease-Detector <br>
@@ -14,11 +16,6 @@ Certainly! Below is the README in Markdown code format suitable for a GitHub rep
 - [Our Approach](#our-approach)
 - [Technology Stack](#technology-stack)
 - [Advantages](#advantages)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
