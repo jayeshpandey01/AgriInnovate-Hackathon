@@ -78,28 +78,5 @@ cd smart-farming
 npm install
 ```
 
-## Usage
 
-1. Start the backend server:
-    ```bash
-    npm run server
-    ```
-2. Start the frontend development server:
-    ```bash
-    npm start
-    ```
-3. Access the application in your browser at `http://localhost:3000`.
 
-## Contributing
-
-We welcome contributions to the project. Please fork the repository and submit a pull request with your changes. Ensure that your code adheres to the project's coding standards and includes relevant tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions, feedback, or suggestions, please contact us at [your-email@example.com](mailto:jayeshpandey754@gmail.com).
-
-```
