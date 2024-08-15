@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Hugo 0.48" />
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Agri Dev</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/Frontend/css/spectre-exp.css">
+    <link rel="stylesheet" href="/Frontend/css/spectre-icons.css">
+    <link rel="stylesheet" href="/Frontend/css/spectre.css">
+    <link rel="stylesheet" href="/Frontend/css/yeo.css">
+    <link rel="shortcut icon" href="/Frontend/images/envira-brands-solid.svg" type="image/x-icon">
+    <!-- API -->
+    <script src="https://kit.fontawesome.com/1b35b069f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="yeo-slogan">
+        <div class="container yeo-header">
+            <div class="columns">
+                <div class="column col-12">
+                    <header class="navbar">
+                        <section class="navbar-section">
+                            <a class="navbar-brand logo" href="./">
+                                <i class="fa-brands fa-envira" style="font-size: larger; margin-right: 10px;"></i><span>Agri Dev</span>
+                            </a>
+                        </section>
+                        <section class="navbar-section hide-sm">
+                            
+                            <a class="btn btn-link" href="#we-work">How It's work</a>
+                            <a class="btn btn-link" href="#team">Our Team</a>
+                            <a class="btn btn-primary btn-hire-me" href="/Frontend/main/agri dev.html" >Let's Start</a>
+                        </section>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="container-form">
+            <h1 class="heading">Smart Farming Data Input</h1>
+            <form id="dataForm">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="liveLocation">Live Location:</label>
+                <input type="text" id="liveLocation" name="liveLocation" required>
+                
+                <label for="images">Upload Images 1:</label>
+                <input type="file" id="images" name="images" accept="image/*" multiple required>
+                
+                <label for="images">Upload Images 2:</label>
+                <input type="file" id="images" name="images" accept="image/*" multiple required>
+                <label for="images">Upload Images 3:</label>
+                <input type="file" id="images" name="images" accept="image/*" multiple required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script>
+            document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const country = document.getElementById('country').value;
+            const state = document.getElementById('state').value;
+            const liveLocation = document.getElementById('liveLocation').value;
+            const images = document.getElementById('images').files;
+
+            if (images.length > 5) {
+                alert('You can only upload up to 5 images.');
+                return;
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <h2>Input Data</h2>
+                <p><strong>Country:</strong> ${country}</p>
+                <p><strong>State:</strong> ${state}</p>
+                <p><strong>Live Location:</strong> ${liveLocation}</p>
+                <h2>Uploaded Images</h2>
+            `;
+
+            Array.from(images).forEach((image, index) => {
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(image);
+                img.alt = `Image ${index + 1}`;
+                img.style.width = '100px';
+                img.style.margin = '10px';
+                resultDiv.appendChild(img);
+            });
+            });
+
+        </script>
+        
+        <div class="yeo-footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column col-3 col-sm-6">
+                        <div class="yeo-footer-content">
+                            <h4>Services</h4>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">DevOps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Development</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Consultant</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column col-3 col-sm-6">
+                        <div class="yeo-footer-content">
+                            <h4>Clients</h4>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Lapa Ninja</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Noty IM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Yeo Space</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column col-3 col-sm-6">
+                        <div class="yeo-footer-content">
+                            <h4>Contact Us</h4>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">tinh@lapa.ninja</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Twitter</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.lapa.ninja/">Github</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column col-3 col-sm-6">
+                        <div class="yeo-footer-content">
+                            <h4>Copyright</h4>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="http://www.streamlineicons.com/?ref=lapaninja">Free Streamline Icons</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://ui8.net/products/illustration-pack-vol-03?ref=lapaninja">Buy Illustration Pack by Nimart1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
