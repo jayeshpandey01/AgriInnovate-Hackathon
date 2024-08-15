@@ -1,4 +1,6 @@
 # AgriInnovate-Hackathon
+`Youtube Video:` https://youtu.be/iU5psFjIQG0
+`Website:` https://agridev.netlify.app/
 `DataSet:` https://aps.dac.gov.in/APY/Public_Report1.aspx <br>
 `Get-Data from satellite:` https://github.com/satellite-image-deep-learning/techniques <br>
 `Sugarcane Disease Detection using Deep Learning:` https://github.com/JansherMughal/Sugarcane-Disease-Detector <br>
