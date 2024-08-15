@@ -5,7 +5,6 @@
 `Crop yield Prediction with Deep Learning:` https://github.com/JiaxuanYou/crop_yield_prediction/tree/master?tab=readme-ov-file <br>
 Certainly! Below is the README in Markdown code format suitable for a GitHub repository.
 
-```markdown
 # Smart Farming with Data Analytics and IoT
 
 ## Table of Contents
@@ -76,7 +75,3 @@ To get started with the project, clone the repository and install the necessary 
 git clone https://github.com/yourusername/smart-farming.git
 cd smart-farming
 npm install
-```
-
-
-
