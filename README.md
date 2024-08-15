@@ -16,11 +16,6 @@ Certainly! Below is the README in Markdown code format suitable for a GitHub rep
 - [Our Approach](#our-approach)
 - [Technology Stack](#technology-stack)
 - [Advantages](#advantages)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
